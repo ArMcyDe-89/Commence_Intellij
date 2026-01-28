@@ -1,0 +1,16 @@
+public class Summer25 {
+    public static String findPath(BTNode root, int [] seq){
+        return helper(root, seq,0);
+    }
+    public static String helper(BTNode root, int []seq, int i){
+        if(root.left == null && root.right == ){}
+    }
+    class BTNode {
+        Object elem;
+        BTNode left, right;
+
+        public BTNode(Object elem) {
+            this.elem = elem;
+        }
+    }
+}

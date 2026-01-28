@@ -1,0 +1,16 @@
+{
+    "git.ignoreLimitWarning": true,
+    "java.project.sourcePaths": [
+        "Break-EXP",
+        "220/src/S4L8",
+        "220/src/S4L7",
+        "220/src/S4L6",
+        "220/src/S4L5",
+        "220/src/Lab - Recursion [Java]",
+        "220/src",
+        "220/Quizzes",
+        "220/Finals"
+    ],
+    "java.project.referencedLibraries": [],
+    "java.debug.settings.onBuildFailureProceed": true
+}

@@ -1,0 +1,162 @@
+import java.util.Collections;
+import java.util.ArrayList;
+import java.util.List;
+
+    // Your provided Node class
+class BTNode {
+        Object elem;
+        BTNode left, right;
+
+        public BTNode(Object elem) {
+            this.elem = elem;
+        }
+}
+
+class BTPrinter {
+
+    public static void printNode(BTNode root) {
+        if (root==null)
+            System.out.println("null");
+        else {
+            int maxLevel = BTPrinter.maxLevel(root);
+            printNodeInternal(Collections.singletonList(root), 1, maxLevel);
+        }
+    }
+
+    private static void printNodeInternal(List<BTNode> nodes, int level, int maxLevel) {
+        if (nodes.isEmpty() || BTPrinter.isAllElementsNull(nodes))
+            return;
+
+        int floor = maxLevel - level;
+        int endgeLines = (int) Math.pow(2, (Math.max(floor - 1, 0)));
+        int firstSpaces = (int) Math.pow(2, (floor)) - 1;
+        int betweenSpaces = (int) Math.pow(2, (floor + 1)) - 1;
+
+        BTPrinter.printWhitespaces(firstSpaces);
+
+        List<BTNode> newNodes = new ArrayList<BTNode>();
+        for (BTNode node : nodes) {
+            if (node != null) {
+                System.out.print(node.elem);
+                newNodes.add(node.left);
+                newNodes.add(node.right);
+            } else {
+                newNodes.add(null);
+                newNodes.add(null);
+                System.out.print(" ");
+            }
+
+            BTPrinter.printWhitespaces(betweenSpaces);
+        }
+        System.out.println("");
+
+        for (int i = 1; i <= endgeLines; i++) {
+            for (int j = 0; j < nodes.size(); j++) {
+                BTPrinter.printWhitespaces(firstSpaces - i);
+                if (nodes.get(j) == null) {
+                    BTPrinter.printWhitespaces(endgeLines + endgeLines + i + 1);
+                    continue;
+                }
+
+                if (nodes.get(j).left != null){
+                    int elemLength = String.valueOf(nodes.get(j).left.elem).length();
+                    if( elemLength==1 ) System.out.print("/");
+                    else System.out.print(" /");
+                }
+                else
+                    BTPrinter.printWhitespaces(1);
+
+                BTPrinter.printWhitespaces(i + i - 1);
+
+                if (nodes.get(j).right != null){
+                    int elemLength = String.valueOf(nodes.get(j).right.elem).length();
+                    if( elemLength==1 ) System.out.print("\\");
+                    else System.out.print(" \\");
+                }
+                else
+                    BTPrinter.printWhitespaces(1);
+
+                BTPrinter.printWhitespaces(endgeLines + endgeLines - i);
+            }
+
+            System.out.println("");
+        }
+
+        printNodeInternal(newNodes, level + 1, maxLevel);
+    }
+
+    private static void printWhitespaces(int count) {
+        for (int i = 0; i < count; i++)
+            System.out.print(" ");
+    }
+
+    private static int maxLevel(BTNode node) {
+        if (node == null)
+            return 0;
+
+        return Math.max(BTPrinter.maxLevel(node.left), BTPrinter.maxLevel(node.right)) + 1;
+    }
+
+    private static boolean isAllElementsNull(List<?> list) {
+        for (Object object : list) {
+            if (object != null)
+                return false;
+        }
+
+        return true;
+    }
+
+}
+public class QuizTwoC {
+
+    public Integer sum_subtree_max(BTNode root){
+        int sum=0, sub = findMax(root.left, Integer.MIN_VALUE) - findMax(root.right, Integer.MIN_VALUE) ;
+        return helper(root, sub);
+
+    }
+
+    public Integer helper(BTNode root, int sub){
+        if(root == null){return  0;}
+        if((int)root.elem>sub){return (int)root.elem+helper(root.left, sub)+helper(root.right, sub);}
+        return helper(root.left, sub)+helper(root.right, sub);
+    }
+
+    public Integer findMax(BTNode root, Integer max){
+        if(root == null){ return max;}
+        if((int)root.elem>max){max = (int)root.elem;}
+        int l = findMax(root.left, max), r = findMax(root.right, max);
+        if(r>max){max = r;} if(l>max){max = l;}
+        return max;        
+    }
+    public static void main(String[] args) {
+        QuizTwoC driver = new QuizTwoC();
+
+        // Build the Tree from the Image
+        //          10
+        //        /    \
+        //       5      15
+        //      / \       \
+        //    -15  7       20
+
+        BTNode n_15 = new BTNode(-15);
+        BTNode n7   = new BTNode(7);
+        BTNode n5   = new BTNode(5); 
+        n5.left = n_15; 
+        n5.right = n7;
+
+        BTNode n20  = new BTNode(20);
+        BTNode n15  = new BTNode(15);
+        n15.right = n20;
+
+        BTNode root = new BTNode(10);
+        root.left = n5;
+        root.right = n15;
+
+        // Execute
+        System.out.println("--- Execution ---");
+        int result = driver.sum_subtree_max(root);
+        
+        System.out.println("Result: " + result);
+        System.out.println("Expected: 57");
+    }
+}

@@ -1,0 +1,25 @@
+// Complete the subtractSummation method
+//ASSIGNMENT TASK MUST SUBMIT
+public class Task5 {
+
+    //===================================TASK#5===================================
+    // This method takes only 1 parameter which is root of the given tree
+    // This method returns an Integer
+    // At times you may need to typeCast root.elem to Integer
+    // You can use extra helper private static methods with extra extra params as per need
+    public static Integer subtractSummation( BTNode root ){
+        int sum = sum(root.left)-sum(root.right);
+        //TO DO
+        return sum; //remove this line
+    }
+    private static int sum(BTNode S){
+        if(S == null){
+            return 0;
+        }
+        else{
+            return (int)S.elem + sum(S.left)+sum(S.right);
+        }
+    }
+    //============================================================================
+
+}

@@ -1,0 +1,106 @@
+
+public class MaxVer {
+    public Integer MaxDeg(Integer [][] arr) {
+        int vertex = 0, Max = 0;
+        for(int i =0; i< arr.length; i++){ int count = 0;
+            for(int j = 0; j<arr[i].length; j++){
+                if(arr[i][j] == 1){count++;}
+            }
+            if (count>Max) {
+                Max = count; vertex = i;
+            }
+        }
+        return Max;        
+    }
+    public Integer MaxDeg(EdgeNode [] arr) {
+        int Max = 0, vertex = 0;
+        for(int i =0; i< arr.length; i++){
+            EdgeNode N = arr[i]; int count = 0;
+            while (N!=null) {
+                count++; N= N.next;
+            }if(count>Max){Max=count; vertex=i;}
+        }
+        return Max;        
+    }
+
+    //task2a
+    public Integer task_2a_MAT(Integer [][] arr) {
+        int vertex = 0, Max = 0;
+        for(int i =0; i< arr.length; i++){ int sum = 0;
+            for(int j = 0; j<arr[i].length; j++){
+                if(arr[i][j] != 0){sum+=arr[i][j];}
+            }
+            if (sum>Max) {
+                Max = sum; vertex = i;
+            }
+        }
+        return Max;        
+    }
+
+    //task2b
+    public Integer task_2b_LIST(EdgeNode [] arr) { 
+        int Max = 0, vertex = 0; EdgeNode MV = null;
+        for(int i =0; i<arr.length; i++){
+            EdgeNode N = arr[i]; int sum =0;
+            while(N!=null){sum+=N.weight;N=N.next;}
+            if(sum>Max){Max =sum; vertex=i; MV = arr[i];}
+        }
+        return Max;        
+    }
+
+    //task3a
+    public Integer task_3a_MAT(Integer [][] arr) { 
+        int vertex = 0, Max = 0;
+        for(int i =0; i< arr.length; i++){ int sum = 0;
+            for(int j = 0; j<arr[i].length; j++){
+                if(arr[i][j] != 0){sum+=arr[i][j];}
+            }
+            if (sum>Max) {
+                Max = sum; vertex = i;
+            }
+        }
+        return Max;        
+    }
+
+    //task3
+    public Integer task_3b_LIST(EdgeNode [] arr) { 
+        int Max = 0, vertex = 0; EdgeNode MV = null;
+        for(int i =0; i<arr.length; i++){
+            EdgeNode N = arr[i]; int sum =0;
+            while(N!=null){sum+=N.weight;N=N.next;}
+            if(sum>Max){Max =sum; vertex=i; MV = arr[i];}
+        }
+        return Max;        
+    }
+    public void GraphConvert_arr(Integer [][] arr) {
+        for(int i =0; i<arr.length;i++){
+            for(int j = i+1; j<arr[i].length;j++){
+                int sum = arr[i][j]+arr[j][i];
+                arr[i][j] = sum; arr[j][i] =sum;
+            }
+        }
+    }
+    public EdgeNode[] GraphConvert_list(EdgeNode [] list){
+        EdgeNode [] copy = new EdgeNode[list.length];
+        for(int i =0; i<list.length;i++){
+            EdgeNode N = list[i];
+            while(N!=null){
+                Integer weight = N.weight, value = N.toV;
+                GraphConvert_Helper(copy, i, value, weight);
+                GraphConvert_Helper(copy, value, i, weight);
+                N=N.next;
+            }
+        }
+        return copy;
+    }
+    public void GraphConvert_Helper(EdgeNode [] copy, Integer i, Integer find, Integer weight){
+        EdgeNode N = copy[i];
+        while(N!=null){
+            if(N.toV == find){N.weight+=weight;return;}
+            N=N.next;
+        }
+        EdgeNode lost = new EdgeNode(find, weight); lost.next = copy[i];
+        copy[i] = lost;
+    }
+
+}
