@@ -1,7 +1,10 @@
 {
     "git.ignoreLimitWarning": true,
     "java.project.sourcePaths": [
+        "Leet",
         "Break-EXP",
+        "221_&_CF/s5l3",
+        "221_&_CF/s5l4",
         "220/src/S4L8",
         "220/src/S4L7",
         "220/src/S4L6",
@@ -9,7 +12,8 @@
         "220/src/Lab - Recursion [Java]",
         "220/src",
         "220/Quizzes",
-        "220/Finals"
+        "220/Finals",
+        "221_&_CF/s5l2"
     ],
     "java.project.referencedLibraries": [],
     "java.debug.settings.onBuildFailureProceed": true

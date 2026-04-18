@@ -6,6 +6,167 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FastMatrixDrift",
+            "request": "launch",
+            "mainClass": "FastMatrixDrift",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "FSDrift",
+            "request": "launch",
+            "mainClass": "FSDrift",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "ResTrees",
+            "request": "launch",
+            "mainClass": "ResTrees",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Trees220",
+            "request": "launch",
+            "mainClass": "Trees220",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "OBT",
+            "request": "launch",
+            "mainClass": "OBT",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "FPDrift",
+            "request": "launch",
+            "mainClass": "FPDrift",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "CITRev",
+            "request": "launch",
+            "mainClass": "CITRev",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "InversionCount",
+            "request": "launch",
+            "mainClass": "InversionCount",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Solution482",
+            "request": "launch",
+            "mainClass": "Solution482",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskB",
+            "request": "launch",
+            "mainClass": "s5l2.TaskB",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Algorithms",
+            "request": "launch",
+            "mainClass": "Algorithms",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskB",
+            "request": "launch",
+            "mainClass": "TaskB",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskA",
+            "request": "launch",
+            "mainClass": "TaskA",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskH",
+            "request": "launch",
+            "mainClass": "TaskH",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskG",
+            "request": "launch",
+            "mainClass": "TaskG",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskE",
+            "request": "launch",
+            "mainClass": "TaskE",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskF",
+            "request": "launch",
+            "mainClass": "TaskF",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskD",
+            "request": "launch",
+            "mainClass": "TaskD",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskC",
+            "request": "launch",
+            "mainClass": "TaskC",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "S5L1",
+            "request": "launch",
+            "mainClass": "S5L1",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "BangPicker",
+            "request": "launch",
+            "mainClass": "BangPicker",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Solution6",
+            "request": "launch",
+            "mainClass": "Solution6",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
             "name": "Merge",
             "request": "launch",
             "mainClass": "Merge",
@@ -211,7 +372,10 @@
             "type": "java",
             "name": "Current File",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "${fileBasenameNoExtension}",
+            "classPaths": [
+                "${fileDirname}"
+            ]
         }
     ]
 }
