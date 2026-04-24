@@ -1,5 +1,0 @@
-public class TestRunner {
-    public static void main(String[] args) {
-        System.out.println(BSTNode.fibonacci(4, 0, 1)); System.out.println(BSTNode.fibonacciSum(7, 0, 1));
-    }
-}
