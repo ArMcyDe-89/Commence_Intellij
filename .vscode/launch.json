@@ -1,0 +1,381 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "FastMatrixDrift",
+            "request": "launch",
+            "mainClass": "FastMatrixDrift",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "FSDrift",
+            "request": "launch",
+            "mainClass": "FSDrift",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "ResTrees",
+            "request": "launch",
+            "mainClass": "ResTrees",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Trees220",
+            "request": "launch",
+            "mainClass": "Trees220",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "OBT",
+            "request": "launch",
+            "mainClass": "OBT",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "FPDrift",
+            "request": "launch",
+            "mainClass": "FPDrift",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "CITRev",
+            "request": "launch",
+            "mainClass": "CITRev",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "InversionCount",
+            "request": "launch",
+            "mainClass": "InversionCount",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Solution482",
+            "request": "launch",
+            "mainClass": "Solution482",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskB",
+            "request": "launch",
+            "mainClass": "s5l2.TaskB",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Algorithms",
+            "request": "launch",
+            "mainClass": "Algorithms",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskB",
+            "request": "launch",
+            "mainClass": "TaskB",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskA",
+            "request": "launch",
+            "mainClass": "TaskA",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskH",
+            "request": "launch",
+            "mainClass": "TaskH",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskG",
+            "request": "launch",
+            "mainClass": "TaskG",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskE",
+            "request": "launch",
+            "mainClass": "TaskE",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskF",
+            "request": "launch",
+            "mainClass": "TaskF",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskD",
+            "request": "launch",
+            "mainClass": "TaskD",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TaskC",
+            "request": "launch",
+            "mainClass": "TaskC",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "S5L1",
+            "request": "launch",
+            "mainClass": "S5L1",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "BangPicker",
+            "request": "launch",
+            "mainClass": "BangPicker",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Solution6",
+            "request": "launch",
+            "mainClass": "Solution6",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Merge",
+            "request": "launch",
+            "mainClass": "Merge",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizThreeF",
+            "request": "launch",
+            "mainClass": "QuizThreeF",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizThreeE",
+            "request": "launch",
+            "mainClass": "QuizThreeE",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizThreeD",
+            "request": "launch",
+            "mainClass": "QuizThreeD",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizThreeA",
+            "request": "launch",
+            "mainClass": "QuizThreeA",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizTwoF",
+            "request": "launch",
+            "mainClass": "QuizTwoF",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizTwoE",
+            "request": "launch",
+            "mainClass": "QuizTwoE",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizTwoE$ForestDriver",
+            "request": "launch",
+            "mainClass": "QuizTwoE$ForestDriver",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizTwoD",
+            "request": "launch",
+            "mainClass": "QuizTwoD",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Fall24",
+            "request": "launch",
+            "mainClass": "Fall24",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Spring25",
+            "request": "launch",
+            "mainClass": "Spring25",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Summer25",
+            "request": "launch",
+            "mainClass": "Summer25",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "lab9_task1",
+            "request": "launch",
+            "mainClass": "S4L9.lab9_task1",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizTwoC",
+            "request": "launch",
+            "mainClass": "QuizTwoC",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizTwoB",
+            "request": "launch",
+            "mainClass": "QuizTwoB",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "SensorDriver",
+            "request": "launch",
+            "mainClass": "SensorDriver",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizTwoA",
+            "request": "launch",
+            "mainClass": "QuizTwoA",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizOneE",
+            "request": "launch",
+            "mainClass": "QuizOneE",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizOneD",
+            "request": "launch",
+            "mainClass": "QuizOneD",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizOneB",
+            "request": "launch",
+            "mainClass": "QuizOneB",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "QuizOne",
+            "request": "launch",
+            "mainClass": "QuizOne",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "GraphDemo",
+            "request": "launch",
+            "mainClass": "GraphDemo",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "MinHeapTester",
+            "request": "launch",
+            "mainClass": "MinHeapTester",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "MaxHeapTester",
+            "request": "launch",
+            "mainClass": "MaxHeapTester",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Runner",
+            "request": "launch",
+            "mainClass": "Runner",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "TestRunner",
+            "request": "launch",
+            "mainClass": "TestRunner",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearchTreeTester",
+            "request": "launch",
+            "mainClass": "BinarySearchTreeTester",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreeTester",
+            "request": "launch",
+            "mainClass": "BinaryTreeTester",
+            "projectName": "Commence_Intellij_a6d00d27"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${fileBasenameNoExtension}",
+            "classPaths": [
+                "${fileDirname}"
+            ]
+        }
+    ]
+}
